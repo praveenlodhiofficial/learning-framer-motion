@@ -33,10 +33,10 @@ const BasicsOfMotion = () => {
           <AnimatePresence>
             {isVisible && (
               <motion.div
-                initial={{ opacity: 0, scale: 0.5, rotate: '0deg' }}
-                animate={{ opacity: 1, scale: 1, rotate: '180deg' }}
-                exit={{ opacity: 0, scale: 0.5, rotate: '0deg' }}
-                transition={{ duration: 1, ease: 'backInOut' }}
+                initial={{ opacity: 1, scale: 0.5, rotate: '0deg' }}
+                animate={{ opacity: 1, scale: 1, rotate: '180deg', y: [0, 150, -350, 300], x: [0, 200, -100, 500]}}
+                exit={{ opacity: 1, scale: 0.5, rotate: '0deg' }}
+                transition={{ duration: 2, ease: 'backInOut', times: [0, 0.6, 1.5, 2] }}
                 className="ml-5 bg-slate-100 h-24 w-24"
               ></motion.div>
             )}
@@ -66,6 +66,7 @@ export default BasicsOfMotion;
   10. AnimatePresence: A component provided by Framer Motion that renders its children only when they are present in the DOM. It automatically handles adding and removing the children based on their presence in the DOM.
                                   Simply it is used to perform exit animations when
   11. Layout: It is a prop in framer-motion is useful for animating smooth transitions when an element's position or dimensions change in response to layout shifts.
+  12. Line 37 & 38: x & y position mention in steps and in equal no. of timestamp we have to break {times}
 
 */
 

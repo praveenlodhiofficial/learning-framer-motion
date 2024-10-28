@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,5 +19,35 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: orbitron;
+  letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.perspective-container {
+  perspective: 800px;
+}
+
+.tilt-button {
+  transform: rotateY(-10deg);
+}
+
+.tilt-button:hover {
+  transform: rotateY(20deg);
+  transform: rotateZ(-2deg);
+  scale: 1.05;
+  border-radius: 500px;
 }

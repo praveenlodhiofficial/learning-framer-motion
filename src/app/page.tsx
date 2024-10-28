@@ -4,26 +4,20 @@ import React from 'react'
 const page = () => {
   return (
     <div className='p-5'>
-      <h1 className='underline text-2xl font-semibold'>Framer-Motion</h1>
+      <div className="justify-center text-center text-3xl underline font-semibold">
+        Framer-Motion
+      </div>
 
-      <div className='p-2 flex flex-col'>
+      <div className='py-10 flex flex-col gap-2'>
 
         {/* Basics of Motion */}
-        <Link
-          href='/basics-of-motion'
-          className='text-md'>1. Basic of Motion
+        <Link href='/basics-of-motion' className='text-sm'>
+          1. Basic of Motion
         </Link>
 
-        {/* Basics of Motion */}
-        <Link
-          href='/basics-of-motion'
-          className='text-md'>1. Basic of Motion
-        </Link>
-
-        {/* Basics of Motion */}
-        <Link
-          href='/basics-of-motion'
-          className='text-md'>1. Basic of Motion
+        {/* Gestures */}
+        <Link href='/gestures' className='text-sm'>
+          2. Gestures
         </Link>
 
       </div>
