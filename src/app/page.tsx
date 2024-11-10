@@ -20,6 +20,11 @@ const page = () => {
           2. Gestures
         </Link>
 
+        {/* Motion Projects */}
+        <Link href='/motion-projects' className='text-sm'>
+          3. Motion Projects
+        </Link>
+
       </div>
 
     </div>
