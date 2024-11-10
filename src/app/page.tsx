@@ -3,12 +3,12 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className='p-5'>
-      <div className="justify-center text-center text-3xl underline font-semibold">
+    <div className='p-3'>
+      <div className="p-3 justify-center text-center text-3xl underline font-semibold">
         Framer-Motion
       </div>
 
-      <div className='py-10 flex flex-col gap-2'>
+      <div className='flex m-10 flex-col gap-2'>
 
         {/* Basics of Motion */}
         <Link href='/basics-of-motion' className='text-sm'>

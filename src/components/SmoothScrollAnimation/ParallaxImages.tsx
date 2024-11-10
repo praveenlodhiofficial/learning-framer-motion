@@ -19,7 +19,7 @@ export const ParallaxImages = () => {
         className="mx-auto w-2/3"
       />
       <ParallaxImg
-        src="https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src="https://www.iafindia.com/wp-content/uploads/2023/07/WhatsApp-Image-2023-07-15-at-1.29.27-PM.jpeg"
         alt="Orbiting satellite"
         start={-200}
         end={200}

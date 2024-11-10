@@ -16,13 +16,13 @@ export const Schedule = () => {
       >
         Launch Schedule
       </motion.h1>
-      <ScheduleItem title="NG-21" date="Dec 9th" location="Florida" />
-      <ScheduleItem title="Starlink" date="Dec 20th" location="Texas" />
-      <ScheduleItem title="Starlink" date="Jan 13th" location="Florida" />
-      <ScheduleItem title="Turksat 6A" date="Feb 22nd" location="Florida" />
-      <ScheduleItem title="NROL-186" date="Mar 1st" location="California" />
-      <ScheduleItem title="GOES-U" date="Mar 8th" location="California" />
-      <ScheduleItem title="ASTRA 1P" date="Apr 8th" location="Texas" />
+      <ScheduleItem title="Gaganyaan Mission" date="December 2024" location="Sriharikota, India" />
+      <ScheduleItem title="Aditya-L1" date="January 2024" location="Sriharikota, India" />
+      <ScheduleItem title="Chandrayaan-3 (Lunar Mission)" date="TBD 2024" location="Sriharikota, India" />
+      <ScheduleItem title="PSLV-C56" date="February 2024" location="Sriharikota, India" />
+      <ScheduleItem title="GSAT-30" date="March 2024" location="Sriharikota, India" />
+      <ScheduleItem title="NavIC (Navigation Satellite)" date="April 2024" location="Sriharikota, India" />
+      <ScheduleItem title="INSAT Series Satellite" date="May 2024" location="Sriharikota, India" />
     </section>
   );
 };
