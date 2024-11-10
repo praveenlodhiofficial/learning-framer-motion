@@ -20,7 +20,7 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: laila;
-  letter-spacing: 2px;
+  /* letter-spacing: 2px; */
 }
 
 

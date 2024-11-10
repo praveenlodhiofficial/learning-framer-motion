@@ -6,7 +6,7 @@ interface DropdownMenusLayoutProps {
 
 const DropdownMenusLayout = ({ children }: DropdownMenusLayoutProps) => {
     return (
-        <main className="p-3">
+        <main className="">
             {children}
         </main>
     );
