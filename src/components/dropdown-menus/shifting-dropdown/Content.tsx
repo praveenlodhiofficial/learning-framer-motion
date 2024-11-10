@@ -8,38 +8,33 @@ const TABS = [
   { title: "Products", Component: Products, id: 1 },
   { title: "Blog", Component: Blog, id: 2 },
   { title: "Pricing", Component: Pricing, id: 3 },
+  { title: "About", Component: Pricing, id: 4 },
 ];
 
-const Content = ({ selected, dir }: { selected: number | null; dir: null | "l" | "r" }) => {
+interface ContentProps {
+  dir: "r" | "l" | null;
+  selected: number;
+  Component: React.ComponentType;
+}
+
+const Content = ({ selected, dir, Component }: ContentProps) => {
   return (
     <motion.div
       id="overlay-content"
       initial={{ opacity: 0, y: 8 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: 8 }}
-      className="absolute left-0 top-[calc(100%_+_24px)] w-96 rounded-lg border border-neutral-600 bg-gradient-to-b from-neutral-900 via-neutral-900 to-neutral-800 p-4"
+      className="absolute top-[calc(100%_+_20px)] w-[400px] rounded-lg border border-neutral-600 bg-gradient-to-b from-neutral-900 via-neutral-900 to-neutral-800 p-4"
     >
       <Bridge />
       <Nub selected={selected} />
-      {TABS.map((t) => (
-        <div key={t.id} className="overflow-hidden">
-          {selected === t.id && (
-            <motion.div
-              initial={{ opacity: 0, x: dir === "l" ? 100 : dir === "r" ? -100 : 0 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.25, ease: "easeInOut" }}
-            >
-              <t.Component />
-            </motion.div>
-          )}
-        </div>
-      ))}
+      <Component />
     </motion.div>
   );
 };
 
 const Bridge = () => (
-  <div className="absolute -top-[24px] left-0 right-0 h-[24px]" />
+  <div className="absolute -top-[20px] left-0 right-0 h-[20px]" />
 );
 
 const Nub = ({ selected }: { selected: number | null }) => {
